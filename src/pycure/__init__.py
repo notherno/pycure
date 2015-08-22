@@ -2,7 +2,7 @@
 from . import girl, precure
 from datetime import date
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 Precure = precure.PrecureDict()
 Precure.add('',
@@ -48,6 +48,10 @@ Precure.add('dokidoki',
 Precure.add('happinesscharge',
             'ハピネスチャージプリキュア！',
             date(2014, 2, 2),
+            date(2015, 1, 25))
+Precure.add('princess',
+            'Go！プリンセスプリキュア',
+            date(2015, 2, 1),
             None,
             True)
 
@@ -108,6 +112,7 @@ komachi = girl.Girl(
 karen = girl.Girl(
     '水無月かれん', 'キュアアクア',
     "知性の青き泉、キュアアクア！"),
+
 Precure['yes'].girls = [
     nozomi,
     rin,
@@ -232,4 +237,25 @@ Precure['happinesscharge'].girls = [
     girl.Girl(
         '白雪ひめ', 'キュアプリンセス',
         "天空に舞う蒼き風！ キュアプリンセス！"),
+    girl.Girl(
+        '大森ゆうこ', 'キュアハニー',
+        "大地にみのる命の光！ キュアハニー！"),
+    girl.Girl(
+        '氷川いおな', 'キュアフォーチュン',
+        "夜空にきらめく希望の星！ キュアフォーチュン！"),
+]
+
+Precure['princess'].girls = [
+    girl.Girl(
+        '春野はるか', 'キュアフローラ',
+        "咲きほこる花のプリンセス！ キュアフローラ！"),
+    girl.Girl(
+        '海藤みなみ', 'キュアマーメイド',
+        "澄みわたる海のプリンセス！ キュアマーメイド！"),
+    girl.Girl(
+        '天ノ川きらら', 'キュアトゥインクル',
+        "きらめく星のプリンセス！ キュアトゥインクル！"),
+    girl.Girl(
+        '紅城トワ', 'キュアスカーレット',
+        "深紅の炎のプリンセス！ キュアスカーレット！"),
 ]
